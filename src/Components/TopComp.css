@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.top-wrapper {
+  padding: 60px 20px;
+  text-align: center;
+  padding-top: 50px 50px;
+  padding-bottom: 30px;
+  margin-top: 130px;
+  margin-bottom: 45px;
+  margin-left: 70px;
+}
+
+.title {
+  text-align: center;
+  font-size: 19px;
+  font-weight: bold;
+  color: hsl(233, 13%, 49%);
+}
+.switch input {
+  opacity: 0;
+}
+.switch {
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+  position: relative;
+  cursor: pointer;
+}
+.slider {
+  position: absolute;
+  background: linear-gradient(180deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 35px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.slider:hover {
+  background: hsl(236, 72%, 79%);
+}
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  bottom: 4px;
+  left: 4px;
+  transition: all 0.4s ease-in-out;
+}
+input:checked .slider::before {
+  transform: translateX(26px);
+}
+.pricing {
+  color: hsl(234, 14%, 74%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.pricing label {
+  margin: 0 20px;
+}

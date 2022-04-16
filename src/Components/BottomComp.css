@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.pricing-main {
+  padding: 0 100px 50px 100px;
+  display: flex;
+  width: 100%;
+  position: relative;
+  bottom: 70px;
+}
+.box-title {
+  color: hsl(233, 13%, 49%);
+  font-size: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1;
+}
+.price-annually,
+.price-monthly {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(233, 13%, 49%);
+}
+.price-monthly {
+  display: none;
+}
+.price {
+  font-size: 40px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.pricing-box {
+  border-radius: 12px;
+  text-align: center;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 19px -8px rgba(0, 0, 0, 0.75);
+  padding: 1.3rem;
+}
+.featured {
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: #fff;
+  border-radius: 10px;
+  padding: 3rem 1.3rem !important;
+  color: white;
+  margin: -20px 0;
+}
+ul {
+  list-style-type: none;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+ul li {
+  color: hsl(233, 13%, 49%);
+  border-bottom: 1px solid hsl(234, 14%, 74%);
+  padding: 20px 0;
+  line-height: 1;
+}
+ul li:first-child {
+  border-top: 1px solid hsl(234, 14%, 74%);
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: Linear Gradient(180deg, hsl(236, 72%, 79%) to hsl(237, 63%, 64%));
+  width: 100%;
+  display: block;
+  padding: 16px 0;
+  background-color: hsl(237, 63%, 64%);
+  color: #fff;
+}
+.btn:hover {
+  color: hsl(237, 63%, 64%);
+  background: transparent;
+  border-color: hsl(237, 63%, 64%);
+}
+.featured {
+  background: linear-gradient(180deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  transform: scaleX(1.05);
+}
+.featured p {
+  color: #fff;
+}
+.featured ul li {
+  color: #fff;
+}
+.pricing-box .featured a {
+  color: #fff;
+  background: hsl(237, 63%, 64%);
+}
+
+.featured a:hover {
+  color: #fff;
+  border-color: #fff;
+  background: transparent;
+}
+
+/* @media only screen and (max-width: 1024px) {
+  .pricing-main {
+    grid-template-columns: 1fr;
+  }
+  .price {
+    font-size: 40px;
+  }
+  .pricing-box {
+    padding: 40px 30px;
+  }
+  .pricing-box .featured {
+    padding: 70px 30px;
+  }
+} */
